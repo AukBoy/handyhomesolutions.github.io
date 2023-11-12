@@ -137,27 +137,28 @@
           </div>
         </div>
         <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-          <form action="https://formsubmit.co/testhandyhome@gmail.com" method="POST" >
+          <form action="" >
             <div class="row">
               <div class="col-6 mb-3">
-                <input type="text" class="form-control" placeholder="Your Name" />
+                <input id="name" type="text" class="form-control" placeholder="Your Name" />
               </div>
               <div class="col-6 mb-3">
                 <input id="email" type="email" class="form-control" placeholder="Your Email" />
               </div>
               <div class="col-12 mb-3">
-                <input type="text" class="form-control" placeholder="Subject" />
+                <input id="subject" type="text" class="form-control" placeholder="Subject" />
               </div>
               <div class="col-12 mb-3">
-                <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                <textarea id="message" name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
               </div>
 
               <div class="col-12">
-                <input type="submit" value="Send Message" class="btn btn-primary" />
+                <input type="submit" onclick="whatsapp()" value="Send Message" class="btn btn-primary" />
               </div>
             </div>
           </form>
         </div>
+        
       </div>
     </div>
   </div>
@@ -286,8 +287,8 @@
     function sendmail() {
       Email.send({
         Host: "smtp.gmail.com",
-        Username: "testhandyhome@gmail.com",
-        Password: "12EDA407FF7B08A9377C0D015B67DBC2EEA0",
+        Username: "amilaudayangakoralegedara1@gmail.com",
+        Password: "6515AB78A7BDBF365F19226DAC620F1B63EE",
         To: 'testhandyhome@gmail.com',
         From: document.getElementById("email").value,
         Subject: "New Contact from handyhome",
@@ -298,6 +299,24 @@
       );
     }
   </script> -->
+
+  <script>
+    function whatsapp(){
+      var name = document.getElementById("name").value;
+      var email = document.getElementById("email").value;
+      var subject = document.getElementById("subject").value;
+      var message = document.getElementById("message").value;
+
+      var whatsappurl="https://wa.me/message/QGQMZRWMURERA1"
+      +"Name of Customer:"+name+"%0a"
+      +"email:"+mobile+"%0a"
+      +"subject:"+email+"%0a"
+      +"Message:"+message;
+
+      window.open(whatsapp,"_blank").focus();
+
+    }
+  </script>
 </body>
 
 </html>
