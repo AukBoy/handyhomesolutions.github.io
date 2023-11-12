@@ -281,24 +281,6 @@
   <script src="js/counter.js"></script>
   <script src="js/custom.js"></script>
 
-  <!-- <script src="https://smtpjs.com/v3/smtp.js">
-  </script>
-  <script>
-    function sendmail() {
-      Email.send({
-        Host: "smtp.gmail.com",
-        Username: "amilaudayangakoralegedara1@gmail.com",
-        Password: "6515AB78A7BDBF365F19226DAC620F1B63EE",
-        To: 'testhandyhome@gmail.com',
-        From: document.getElementById("email").value,
-        Subject: "New Contact from handyhome",
-        Body: "New Contact from handyhome"
-
-      }).then(
-        message => alert(message)
-      );
-    }
-  </script> -->
 
   <script>
     function whatsapp(){
@@ -308,12 +290,12 @@
       var message = document.getElementById("message").value;
 
       var whatsappurl="https://wa.me/message/QGQMZRWMURERA1"
-      +"Name of Customer:"+name+"%0a"
-      +"email:"+mobile+"%0a"
-      +"subject:"+email+"%0a"
-      +"Message:"+message;
+      +"Name of Customer:"+ name +"%0a"
+      +"email:"+ mobile+"%0a"
+      +"subject:"+ email + "%0a"
+      +"Message:"+ message;
 
-      window.open(whatsapp,"_blank").focus();
+      window.open(whatsappurl,"_blank").focus();
 
     }
   </script>
