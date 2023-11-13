@@ -122,8 +122,12 @@
             </div>
           </div>
         </div>
+
         <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
-          <form action="" >
+
+          <!-- contact us form start -->
+
+          <form action="whatsapp()">
             <div class="row">
               <div class="col-6 mb-3">
                 <input id="name" type="text" class="form-control" placeholder="Your Name" />
@@ -139,10 +143,14 @@
               </div>
 
               <div class="col-12">
-                <input type="submit" onclick="whatsapp()" value="Send Message" class="btn btn-primary" />
+                <!-- <button onclick="" class="btn btn-primary">Submit</button> -->
+                <input type="submit" class="btn btn-danger" value="Submit">
               </div>
             </div>
           </form>
+
+          <!-- contact us form end -->
+
         </div>
         
       </div>
@@ -266,12 +274,14 @@
   <script src="js/navbar.js"></script>
   <script src="js/counter.js"></script>
   <script src="js/custom.js"></script>
+  <!-- <script defer src="js/whatsapp.js"></script> -->
+  
 
 
   <script>
     function whatsapp(){
 
-      let number = "+94781194995"
+      let number = "+94781194995";
 
       let name = document.getElementById("name").value;
       let email = document.getElementById("email").value;
@@ -288,6 +298,7 @@
 
     }
   </script>
+
 </body>
 
 </html>
