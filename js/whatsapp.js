@@ -1,18 +1,20 @@
 function whatsapp(){
 
-    let number = "+94781194995"
 
-    let name = document.getElementById("name").value;
-    let email = document.getElementById("email").value;
-    let subject = document.getElementById("subject").value;
-    let message = document.getElementById("message").value;
+    console.log("HI hi");
+    // let number = "+94781194995"
 
-    var whatsappurl="https://wa.me/" + number +"?text="
-    +"Name of Customer:"+ name +"%0a"
-    +"email:"+ mobile+"%0a"
-    +"subject:"+ email + "%0a"
-    +"Message:"+ message;
+    // let name = document.getElementById("name").value;
+    // let email = document.getElementById("email").value;
+    // let subject = document.getElementById("subject").value;
+    // let message = document.getElementById("message").value;
 
-    window.open(whatsappurl,"_blank").focus();
+    // var whatsappurl="https://wa.me/" + number +"?text="
+    // +"Name of Customer:"+ name +"%0a"
+    // +"email:"+ mobile+"%0a"
+    // +"subject:"+ email + "%0a"
+    // +"Message:"+ message;
+
+    // window.open(whatsappurl,"_blank").focus();
 
   }

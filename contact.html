@@ -52,7 +52,7 @@
 
           <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu float-end">
             <li><a href="index.html">Home</a></li>
-            
+
             -->
             <li class="active"><a href="contact.html">Contact Us</a></li>
           </ul>
@@ -125,34 +125,68 @@
 
         <div class="col-lg-8" data-aos="fade-up" data-aos-delay="200">
 
+          <div class="col-lg-7 mx-auto text-center">
+            <h2 class="mb-4">Contact us to know more</h2>
+            <p>
+              <a
+                href="https://wa.me/+94774756003"
+                target="_blank"
+                class="btn btn-primary text-white py-3 px-4"
+                >Send Message</a
+              >
+            </p>
+          </div>
+
           <!-- contact us form start -->
 
-          <form action="whatsapp()">
+          <!-- <form action="#">
             <div class="row">
               <div class="col-6 mb-3">
-                <input id="name" type="text" class="form-control" placeholder="Your Name" />
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Your Name"
+                />
               </div>
               <div class="col-6 mb-3">
-                <input id="email" type="email" class="form-control" placeholder="Your Email" />
+                <input
+                  type="email"
+                  class="form-control"
+                  placeholder="Your Email"
+                />
               </div>
               <div class="col-12 mb-3">
-                <input id="subject" type="text" class="form-control" placeholder="Subject" />
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Subject"
+                />
               </div>
               <div class="col-12 mb-3">
-                <textarea id="message" name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
+                <textarea
+                  name=""
+                  id=""
+                  cols="30"
+                  rows="7"
+                  class="form-control"
+                  placeholder="Message"
+                ></textarea>
               </div>
 
               <div class="col-12">
-                <!-- <button onclick="" class="btn btn-primary">Submit</button> -->
-                <input type="submit" class="btn btn-danger" value="Submit">
+                <input
+                  type="submit"
+                  value="Send Message"
+                  class="btn btn-primary"
+                />
               </div>
             </div>
-          </form>
+          </form> -->
 
           <!-- contact us form end -->
 
         </div>
-        
+
       </div>
     </div>
   </div>
@@ -274,30 +308,41 @@
   <script src="js/navbar.js"></script>
   <script src="js/counter.js"></script>
   <script src="js/custom.js"></script>
-  <!-- <script defer src="js/whatsapp.js"></script> -->
-  
+  <!-- <script defer src="js/whatsapp.js"></script>  -->
 
 
-  <script>
-    function whatsapp(){
 
-      let number = "+94781194995";
+  <!-- <script>
+    function whatsapp() {
 
-      let name = document.getElementById("name").value;
-      let email = document.getElementById("email").value;
-      let subject = document.getElementById("subject").value;
-      let message = document.getElementById("message").value;
+      // console.log("HI hi");
+      alert("hi aaa");
 
-      var whatsappurl="https://wa.me/" + number +"?text="
-      +"Name of Customer:"+ name +"%0a"
-      +"email:"+ mobile+"%0a"
-      +"subject:"+ email + "%0a"
-      +"Message:"+ message;
 
-      window.open(whatsappurl,"_blank").focus();
+      // let number = "+94781194995";
+
+      // let name = document.getElementById("name").value;
+      // let email = document.getElementById("email").value;
+      // let subject = document.getElementById("subject").value;
+      // let message = document.getElementById("message").value;
+
+      // var whatsappurl="https://wa.me/" + number +"?text="
+      // +"Name of Customer:"+ name +"%0a"
+      // +"email:"+ mobile+"%0a"
+      // +"subject:"+ email + "%0a"
+      // +"Message:"+ message;
+
+      // window.open(whatsappurl,"_blank").focus();
 
     }
-  </script>
+
+
+    function sendMessage() {
+            // Call the whatsapp function with the provided data
+            whatsapp();
+        }
+
+  </script> -->
 
 </body>
 
